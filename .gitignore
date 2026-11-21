@@ -1,0 +1,26 @@
+# Dépendances (recréées par pnpm install)
+node_modules/
+
+# Builds
+.next/
+dist/
+out/
+
+# Cache Turborepo
+.turbo/
+
+# Secrets — ne jamais committer de clés
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Système / éditeur
+.DS_Store
+Thumbs.db
+
+# Divers
+*.tsbuildinfo
+.vercel
