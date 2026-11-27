@@ -2,5 +2,473 @@
     "Home": {
         "title": "Bienvenue",
         "description": "Waza and Act - Organisation humanitaire en RDC"
+    },
+    "Header": {
+        "home": "Accueil",
+        "about": "À propos",
+        "news": "Actualités",
+        "jobs": "Offres d'emploi",
+        "reports": "Rapports",
+        "contact": "Contact",
+        "menu": "Menu"
+    },
+    "Hero": {
+        "region": "À la une",
+        "prev": "Slide précédente",
+        "next": "Slide suivante",
+        "goTo": "Aller à la slide {number}",
+        "slides": [
+            {
+                "badge": "Éducation et autonomisation",
+                "title": "Éduquer,",
+                "accent": "protéger et",
+                "titleEnd": "accompagner.",
+                "description": "Nous accompagnons les enfants, les jeunes et les personnes vulnérables à travers l'éducation, la formation et le renforcement de leurs capacités pour construire un avenir autonome et durable.",
+                "cta": "Découvrir nos actions",
+                "alt": "Enfants bénéficiant d'un accompagnement éducatif en République démocratique du Congo"
+            },
+            {
+                "badge": "Protection et action humanitaire",
+                "title": "Défendre",
+                "accent": "les droits et la",
+                "titleEnd": "dignité.",
+                "description": "Nous apportons un soutien aux communautés fragilisées en favorisant l'accès aux services essentiels, la protection des personnes vulnérables et la promotion d'une vie digne, à l'abri de l'exclusion.",
+                "cta": "Nos engagements",
+                "alt": "Équipe humanitaire de Waza and Act engagée auprès des communautés"
+            },
+            {
+                "badge": "Santé et résilience communautaire",
+                "title": "Agir au cœur",
+                "accent": "des",
+                "titleEnd": "communautés.",
+                "description": "Nous travaillons aux côtés des communautés, des femmes et des familles pour améliorer leur bien-être, renforcer leur résilience et favoriser des conditions de vie plus saines et durables.",
+                "cta": "Qui sommes-nous ?",
+                "alt": "Activité de santé communautaire menée par Waza and Act"
+            }
+        ]
+    },
+    "Marquee": {
+        "eyebrow": "Domaines d'action",
+        "title": "Des solutions pour les causes qui comptent",
+        "rowOne": ["Éducation", "Santé", "Eau potable", "Protection de l'enfance", "Sécurité alimentaire", "Nutrition", "Hébergement d'urgence", "Assainissement"],
+        "rowTwo": ["Droits humains", "Aide humanitaire", "Solidarité", "Autonomisation des femmes", "Formation professionnelle", "Inclusion", "Résilience", "Développement durable"]
+    },
+    "AboutIntro": {
+        "badge": "Qui sommes-nous",
+        "title": "Éduquer pour transformer",
+        "accent": "des destins",
+        "description": "Waza and Act est une ONG indépendante et impartiale, sans affiliation religieuse ni politique, basée à Goma (RDC). Fondée par M. Sebijumba Augustin, enseignant engagé, elle accompagne les jeunes vulnérables face aux mutations du monde et soutient les adultes fragilisés par les épreuves de la vie, en promouvant l'éducation, la dignité et l'autonomie des communautés.",
+        "cta": "Voir plus",
+        "imageAlt": "Waza and Act, ONG basée à Goma"
+    },
+    "Stats": {
+        "badge": "Notre impact",
+        "title": "Des chiffres qui racontent",
+        "accent": "notre engagement",
+        "items": {
+            "youth": "jeunes accompagnés vers l'école",
+            "trained": "adultes formés à un métier",
+            "neighborhoods": "quartiers mobilisés",
+            "years": "années d'engagement",
+            "projects": "projets accompagnés"
+        }
+    },
+    "MissionVision": {
+        "badge": "Ce qui nous guide",
+        "title": "Une mission claire, une vision ambitieuse et",
+        "accent": "des valeurs solides",
+        "mission": {
+            "title": "Notre mission",
+            "description": "Notre mission est de promouvoir l'éducation, la dignité et l'autonomie des communautés, en accompagnant les jeunes vulnérables et les adultes fragilisés par les épreuves de la vie."
+        },
+        "vision": {
+            "title": "Notre vision",
+            "description": "Notre vision est celle d'une société congolaise où chaque personne, quelle que soit son histoire, a le pouvoir de prendre ses propres décisions et de transformer son destin."
+        },
+        "values": {
+            "title": "Nos valeurs",
+            "description": "Nos valeurs sont l'indépendance, l'impartialité, la dignité, l'éducation et l'autonomie : elles guident chacune de nos actions, sans affiliation religieuse ni politique."
+        }
+    },
+    "Achievements": {
+        "badge": "Nos réalisations",
+        "title": "Des actions concrètes,",
+        "accent": "des vies transformées",
+        "viewAll": "Voir toutes les réalisations",
+        "prev": "Réalisation précédente",
+        "next": "Réalisation suivante",
+        "items": {
+            "education": {
+                "category": "Éducation",
+                "location": "Goma, Nord-Kivu",
+                "title": "Accompagnement scolaire des jeunes vulnérables",
+                "description": "Soutien scolaire, matériel et suivi personnalisé pour permettre à chaque jeune de reprendre ou de poursuivre son parcours éducatif."
+            },
+            "formation": {
+                "category": "Formation",
+                "location": "Goma, Nord-Kivu",
+                "title": "Formations professionnelles pour adultes",
+                "description": "Des ateliers pratiques pour aider les adultes fragilisés par les épreuves de la vie à retrouver un métier et un revenu."
+            },
+            "communaute": {
+                "category": "Communauté",
+                "location": "Goma, Nord-Kivu",
+                "title": "Dialogue et sensibilisation communautaire",
+                "description": "Des rencontres dans les quartiers pour promouvoir l'éducation, la dignité et la cohabitation pacifique entre les habitants."
+            },
+                "autonomie": {
+                "category": "Autonomie",
+                "location": "Goma, Nord-Kivu",
+                "title": "Soutien aux initiatives locales d'autonomie",
+                "description": "Un accompagnement des projets portés par les jeunes et les familles, pour qu'ils deviennent acteurs de leur propre avenir."
+            }
+        }
+    },
+    "Gallery": {
+        "badge": "Galerie",
+        "title": "Nos actions en",
+        "accent": "images",
+        "prev": "Image précédente",
+        "next": "Image suivante"
+    },
+    "DonationCta": {
+        "badge": "Agissez avec nous",
+        "title": "Votre soutien peut changer",
+        "accent": "une vie à Goma",
+        "description": "Chaque don nous aide à accompagner les jeunes vulnérables et les adultes fragilisés par les épreuves de la vie, et à promouvoir l'éducation, la dignité et l'autonomie.",
+        "donate": "Faire un don",
+        "contact": "Nous contacter",
+        "impacts": {
+            "education": {
+                "title": "Éducation",
+                "text": "Soutenir le parcours scolaire des jeunes vulnérables."
+            },
+            "training": {
+                "title": "Formation",
+                "text": "Aider les adultes à retrouver un métier et un revenu."
+            },
+            "autonomy": {
+                "title": "Autonomie",
+                "text": "Accompagner les familles vers un avenir qu'elles choisissent."
+            }
+        }
+    },
+    "BlogPreview": {
+        "badge": "Dernières nouvelles",
+        "title": "Nos derniers",
+        "accent": "articles publiés",
+        "viewAll": "Tous les articles",
+        "readTime": "{minutes} min de lecture",
+        "featured": "À la une",
+        "readMore": "Lire l'article"
+    },
+    "Testimonials": {
+        "badge": "Témoignages",
+        "title": "Ce qu'ils",
+        "accent": "disent de nous",
+        "description": "Ce que disent nos partenaires et bénéficiaires de l'accompagnement de Waza and Act",
+        "items": {
+            "t1": {
+                "quote": "Grâce à Waza and Act, nous avons pu mieux comprendre les besoins des communautés et adapter nos actions sur le terrain. L’accompagnement était concret et attentif.",
+                "name": "Amina Niyonkuru",
+                "role": "Coordinatrice de projet humanitaire"
+            },
+            "t2": {
+                "quote": "L’équipe de Waza and Act a su créer un vrai dialogue entre les partenaires et les communautés. Cette approche participative a renforcé la confiance et l’engagement local.",
+                "name": "Jean-Claude Mukendi",
+                "role": "Responsable de programme communautaire"
+            },
+            "t3": {
+                "quote": "Nous avons apprécié la qualité de l’écoute et la rigueur du suivi. Les recommandations de Waza and Act nous ont aidés à rendre notre intervention plus pertinente et inclusive.",
+                "name": "Chantal Uwase",
+                "role": "Chargée de suivi et d’évaluation"
+            },
+            "t4": {
+                "quote": "Waza and Act nous a accompagnés avec professionnalisme, en tenant compte des réalités du terrain. La collaboration a permis de mieux mobiliser les acteurs locaux autour d’objectifs communs.",
+                "name": "Patrick Bahati",
+                "role": "Directeur d’une organisation partenaire"
+            },
+            "t5": {
+                "quote": "J’ai particulièrement apprécié l’attention portée à la participation des personnes concernées. Leur expérience et leurs priorités ont réellement guidé la réflexion et les activités.",
+                "name": "Grace Mutesi",
+                "role": "Animatrice communautaire"
+            },
+            "t6": {
+                "quote": "Avec Waza and Act, notre équipe a pu renforcer ses pratiques et mieux coordonner son travail avec les partenaires locaux. L’accompagnement était adapté à nos besoins.",
+                "name": "Samuel Kamanzi",
+                "role": "Responsable d’équipe terrain"
+            }
+        }
+    },
+    "Partners": {
+        "badge": "Nos partenaires",
+        "title": "Un impact plus fort,",
+        "accent": "ensemble",
+        "description": "Waza and Act collabore avec des organisations et des acteurs engagés pour accompagner les communautés.",
+        "viewAll": "Voir tous nos partenaires",
+        "items": {
+            "part1": "Logo du partenaire 1",
+            "part2": "Logo du partenaire 2",
+            "part3": "Logo du partenaire 3",
+            "part4": "Logo du partenaire 4",
+            "part5": "Logo du partenaire 5"
+        }
+    },
+    "Footer": {
+        "homeLabel": "Retour à l’accueil de Waza and Act",
+        "description": "Waza and Act agit aux côtés des communautés pour soutenir des initiatives humanitaires durables.",
+        "navigationTitle": "Navigation",
+        "navigationLabel": "Navigation de pied de page",
+        "resourcesTitle": "Ressources",
+        "resourcesLabel": "Ressources de pied de page",
+        "contactTitle": "Nous contacter",
+        "backToTop": "Retour en haut",
+        "donateButton": "Faire un don",
+        "copyright": "Waza and Act. Tous droits réservés.",
+        "links": {
+            "home": "Accueil",
+            "about": "À propos",
+            "news": "Actualités",
+            "jobs": "Offres d’emploi",
+            "reports": "Rapports",
+            "gallery": "Galerie",
+            "contact": "Contact"
+        },
+        "social": {
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "x": "X",
+            "linkedin": "LinkedIn"
+        }
+    },
+
+
+    "About": {
+        "PageHero": {
+            "home": "Accueil",
+            "breadcrumbLabel": "Fil d’Ariane"
+        },
+        "hero": {
+            "breadcrumb": "À propos",
+            "title": "Comprendre notre",
+            "accent": "engagement",
+            "description": "Découvrez Waza and Act, son approche et son engagement auprès des communautés en République démocratique du Congo."
+        },
+        "story": {
+            "badge": "Notre histoire",
+            "title": "Une conviction née de",
+            "accent": "l'éducation",
+            "paragraph1": "Waza and Act est née du désir de M. Sebijumba Augustin, enseignant engagé et conseiller respecté, de répondre aux besoins éducatifs des Congolais.",
+            "paragraph2": "Nous accompagnons les jeunes vulnérables et les adultes fragilisés par les épreuves de la vie, convaincus que chacun peut bâtir son avenir dans la dignité et l'autonomie.",
+            "facts": ["Goma, RDC", "Indépendante et impartiale", "Sans affiliation politique ni religieuse"],
+            "quote": "L'éducation ouvre la voie à la dignité et à l'autonomie.",
+            "quoteAuthor": "Sebijumba Augustin",
+            "quoteRole": "Fondateur",
+            "mainImageAlt": "Activité éducative",
+            "secondaryImageAlt": "Kit éducatif"
+        }
+    },
+    "AreasOfIntervention": {
+        "badge": "Nos domaines d’intervention",
+        "title": "Agir au service",
+        "accent": "des communautés",
+        "description": "Waza and Act intervient dans plusieurs domaines pour soutenir la protection, le développement et l’autonomie des communautés.",
+        "items": {
+            "protection": {
+                "title": "Protection",
+                "description": "Contribuer à protéger les personnes vulnérables et à préserver leurs droits, leur sécurité et leur dignité."
+            },
+            "education": {
+                "title": "Éducation",
+                "description": "Soutenir l’accès à l’apprentissage et accompagner les parcours éducatifs des jeunes et des communautés."
+            },
+            "health": {
+                "title": "Santé",
+                "description": "Promouvoir le bien-être et contribuer à améliorer l’accès aux informations et aux services de santé."
+            },
+            "climateGender": {
+                "title": "Climat & Genre",
+                "description": "Encourager des approches inclusives face aux enjeux climatiques et aux inégalités de genre."
+            },
+            "conflictResolution": {
+                "title": "Résolution des conflits",
+                "description": "Favoriser le dialogue et soutenir les initiatives qui contribuent à la prévention et à la résolution des conflits."
+            }
+        }
+    },
+    "HistoryTimeline": {
+        "badge": "Notre histoire",
+        "title": "Un parcours guidé par",
+        "accent": "l’engagement",
+        "description": "Depuis sa création à Rutshuru, Waza and Act a développé son ancrage institutionnel et étendu sa présence dans l’Est de la RDC.",
+        "previous": "Étape précédente",
+        "next": "Étape suivante",
+        "items": {
+            "foundation": {
+                "date": "Nov.\n2011",
+                "title": "Création à Rutshuru",
+                "description": "Waza and Act est fondée en novembre 2011 à Rutshuru, dans l’Est de la République démocratique du Congo."
+            },
+            "notarizedAct": {
+                "date": "2013",
+                "title": "Acte constitutif authentifié",
+                "description": "L’acte constitutif de l’organisation est authentifié devant notaire le 11 novembre 2013."
+            },
+            "provincialRecognition": {
+                "date": "Mars\n2024",
+                "title": "Reconnaissance provinciale",
+                "description": "L’organisation est reconnue par l’Arrêté provincial n° 01/091/CAB/GP-NK/2024 du 19 mars 2024."
+            },
+            "liaisonOffice": {
+                "date": "Juil.\n2025",
+                "title": "Nouveau bureau de liaison",
+                "description": "En juillet 2025, Waza and Act ouvre un bureau de liaison à Minova, dans le territoire de Kalehe, au Sud-Kivu."
+            }
+        }
+    },
+
+    "DonationMethods": {
+        "badge": "Soutenir nos actions",
+        "title": "Choisissez votre",
+        "accent": "méthode de don",
+        "description": "Votre contribution peut être envoyée directement à Waza and Act par Airtel Money ou par virement bancaire.",
+        "airtelTitle": "Airtel Money",
+        "airtelDescription": "Transfert mobile",
+        "phoneNumber": "Numéro",
+        "airtelInstructions": "Effectuez le transfert depuis votre compte Airtel Money vers ce numéro.",
+        "bankTitle": "Virement bancaire",
+        "bankDescription": "Transfert vers Access Bank",
+        "bankName": "Banque",
+        "accountNumber": "Numéro de compte",
+        "swift": "Code SWIFT",
+        "copy": "Copier les coordonnées",
+        "copied": "Coordonnées copiées",
+        "transferNote": "Vérifiez les informations du bénéficiaire dans votre application ou auprès de votre banque avant de confirmer le transfert."
+    },
+    "DonationPage": {
+        "hero": {
+            "breadcrumb": "Faire un don",
+            "title": "Soutenir",
+            "accent": "les communautés",
+            "description": "Choisissez le moyen de transfert qui vous convient. Vous pouvez envoyer votre don directement via Airtel Money ou Access Bank."
+        },
+        "faq": {
+            "badge": "Questions fréquentes",
+            "title": "Besoin de",
+            "accent": "précisions ?",
+            "contact": "Nous contacter",
+            "items": {
+                "methods": {
+                    "question": "Quels moyens de don sont disponibles ?",
+                    "answer": "Vous pouvez effectuer un transfert par Airtel Money au +243 991 901 271, ou un virement vers le compte Access Bank indiqué sur cette page."
+                },
+                "websitePayment": {
+                    "question": "Le paiement est-il effectué sur ce site ?",
+                    "answer": "Non. Le site affiche les coordonnées de transfert ; le paiement est effectué depuis Airtel Money ou votre application bancaire."
+                },
+                "recurring": {
+                    "question": "Puis-je mettre en place un don mensuel ?",
+                    "answer": "Le site ne met pas en place de paiement mensuel automatique. Pour discuter d’un soutien régulier, contactez Waza and Act."
+                },
+                "verification": {
+                    "question": "Que dois-je vérifier avant de confirmer le transfert ?",
+                    "answer": "Vérifiez le numéro ou les coordonnées bancaires saisis ainsi que le nom du bénéficiaire affiché dans votre application."
+                },
+                "international": {
+                    "question": "Puis-je effectuer un virement depuis l’étranger ?",
+                    "answer": "Le code SWIFT d’Access Bank est ABNGCDKI. Avant le transfert, vérifiez auprès de votre banque la devise acceptée et les frais éventuels."
+                },
+                    "fees": {
+                    "question": "Des frais de transfert peuvent-ils s’appliquer ?",
+                    "answer": "Des frais peuvent dépendre de votre opérateur Airtel Money, de votre banque et du type de transfert. Vérifiez les conditions auprès de votre prestataire avant de confirmer."
+                }        
+            }
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "breadcrumb": "Contact",
+            "title": "Échangeons",
+            "accent": "ensemble",
+            "description": "Notre équipe est à votre écoute pour répondre à vos questions et échanger avec vous."
+        },
+        "contactBadge": "Nous contacter",
+        "contactTitle": "Parlons de votre démarche",
+        "contactDescription": "Notre équipe est disponible pour répondre à vos questions et échanger sur vos besoins.",
+        "complaintsNote": "Pour transmettre une plainte ou un retour confidentiel, écrivez à",
+        "formBadge": "Écrivez-nous",
+        "formTitle": "Comment pouvons-nous vous aider ?",
+        "formDescription": "Remplissez le formulaire et notre équipe pourra prendre connaissance de votre demande.",
+        "nameLabel": "Nom complet",
+        "namePlaceholder": "Votre nom",
+        "emailFieldLabel": "Adresse e-mail",
+        "emailPlaceholder": "vous@exemple.com",
+        "subjectLabel": "Objet",
+        "subjectPlaceholder": "Le sujet de votre message",
+        "messageLabel": "Votre message",
+        "messagePlaceholder": "Écrivez votre message ici...",
+        "submit": "Envoyer le message",
+        "formNote": "Le formulaire sera activé lorsque le service d’envoi des messages sera connecté."
+    },
+    "NewsPage": {
+        "hero": {
+            "breadcrumb": "Actualités",
+            "title": "Nos actualités",
+            "accent": "sur le terrain",
+            "description": "Découvrez les actions, les initiatives et les nouvelles de Waza and Act auprès des communautés."
+        },
+        "categoriesLabel": "Filtrer les actualités par catégorie",
+        "all": "Tout",
+        "featuredHeading": "À la une",
+        "featured": "À la une",
+        "readTime": "{minutes} min de lecture",
+        "readArticle": "Lire l’article",
+        "latestBadge": "Nos publications",
+        "latestTitle": "Dernières actualités",
+        "articleCount": "{count, plural, one {# article} other {# articles}}",
+        "empty": "Aucun article ne correspond à cette catégorie pour le moment.",
+        "paginationLabel": "Pagination des actualités",
+        "previousPage": "Page précédente",
+        "nextPage": "Page suivante"
+    },
+    "ArticlePage": {
+        "breadcrumb": "Actualités",
+        "backToNews": "Retour aux actualités",
+        "readTime": "{minutes} min de lecture",
+        "writtenBy": "Publié par",
+        "relatedBadge": "À découvrir aussi",
+        "relatedTitle": "Autres actualités",
+        "allNews": "Toutes les actualités"
+    },
+    "ArticlePage": {
+        "breadcrumb": "Actualités",
+        "backToNews": "Retour aux actualités",
+        "readTime": "{minutes} min de lecture",
+        "shareArticle": "Partager cet article",
+        "copyLink": "Copier le lien",
+        "copied": "Lien copié"
+    },
+    "ReportsPage": {
+        "hero": {
+            "breadcrumb": "Rapports",
+            "title": "Nos ressources",
+            "accent": "et documents",
+            "description": "Consultez les documents et ressources partagés par Waza and Act."
+        },
+        "searchLabel": "Rechercher un document",
+        "searchPlaceholder": "Rechercher une ressource...",
+        "categoriesLabel": "Filtrer par catégorie",
+        "all": "Tous",
+        "categories": {
+            "institutional": "Documents institutionnels"
+        },
+        "readMore": "Lire en détail",
+        "empty": "Aucun document ne correspond à votre recherche.",
+        "backToReports": "Retour aux rapports",
+        "documentDetails": "Document",
+        "aboutDocument": "À propos de ce document",
+        "downloadPdf": "Télécharger le PDF",
+        "previewTitle": "Aperçu du document",
+        "openInNewTab": "Ouvrir dans un nouvel onglet"
     }
 }

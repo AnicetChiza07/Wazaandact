@@ -1,24 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Questrial } from "next/font/google";
 import "../globals.css";
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { routing, type Locale } from '@/i18n/routing';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing, type Locale } from "@/i18n/routing";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+export const instant = false;
+
+const questrial = Questrial({
+    weight: "400",
     subsets: ["latin"],
+    variable: "--font-questrial",
+    display: "swap",
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const playfair = Playfair_Display({
     subsets: ["latin"],
+    variable: "--font-playfair",
+    display: "swap",
 });
 
 export const metadata: Metadata = {
     title: "Waza and Act",
-    description: "Humanitarian organization in DRC",
+    description: "Organisation humanitaire en RDC",
 };
 
 export function generateStaticParams() {
@@ -27,13 +34,13 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
     children,
-    params
+    params,
 }: Readonly<{
     children: React.ReactNode;
     params: Promise<{ locale: string }>;
 }>) {
     const { locale } = await params;
-  
+
     if (!routing.locales.includes(locale as Locale)) {
         notFound();
     }
@@ -42,9 +49,13 @@ export default async function RootLayout({
 
     return (
         <html lang={locale}>
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+            <body
+                className={`${questrial.variable} ${playfair.variable} antialiased`}
+            >
                 <NextIntlClientProvider messages={messages}>
-                {children}
+                    <Header />
+                    <main className="min-h-screen">{children}</main>
+                    <Footer />
                 </NextIntlClientProvider>
             </body>
         </html>

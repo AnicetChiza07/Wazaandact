@@ -1,26 +1,301 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------
+   1. THÈME — Couleurs et animations de la marque
+   ------------------------------------------------------------ */
+
+@theme {
+    /* Couleurs */
+    --color-primary: #2aaf7c;
+    --color-secondary: #25aee6;
+    --color-ink: #0b2a21;
+
+    /* Variante plus claire du sombre, pour les dégradés */
+    --color-ink-soft: #15483a;
+
+    /* Animations */
+    --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    --animate-hero-kenburns: hero-kenburns 12s ease-out both;
+
+    @keyframes fade-up {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes hero-kenburns {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.08);
+        }
+    }
 }
+
+/* Marquee horizontal */
+@keyframes marquee-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-right {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-marquee-left {
+    animation: marquee-left 70s linear infinite;
+}
+
+.animate-marquee-right {
+    animation: marquee-right 70s linear infinite;
+}
+
+/* Marquee vertical des témoignages */
+@keyframes marquee-up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes marquee-down {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.animate-marquee-up {
+    animation: marquee-up 60s linear infinite;
+}
+
+.animate-marquee-down {
+    animation: marquee-down 60s linear infinite;
+}
+
+/* Utilisée par la barre de progression du hero */
+@keyframes hero-progress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------
+   2. POLICES — Variables injectées par next/font
+   ------------------------------------------------------------ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-questrial), ui-sans-serif, system-ui, sans-serif;
+    --font-display: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ------------------------------------------------------------
+   3. UTILITAIRES SUR MESURE
+   ------------------------------------------------------------ */
+
+@utility container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 4vw, 25px);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility container-narrow {
+    width: 100%;
+    max-width: 800px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 4vw, 25px);
+}
+
+@utility section {
+    padding-block: clamp(64px, 10vw, 112px);
+}
+
+@utility text-gradient {
+    background-image: linear-gradient(
+        100deg,
+        var(--color-primary),
+        var(--color-secondary)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Fondu horizontal du marquee */
+@utility marquee-mask {
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 12%,
+        #000 88%,
+        transparent
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 12%,
+        #000 88%,
+        transparent
+    );
+}
+
+/* Fondu vertical des témoignages */
+@utility marquee-mask-y {
+    mask-image: linear-gradient(
+        to bottom,
+        transparent,
+        #000 10%,
+        #000 90%,
+        transparent
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent,
+        #000 10%,
+        #000 90%,
+        transparent
+    );
+}
+
+/* ------------------------------------------------------------
+   4. STYLES DE BASE — Appliqués à tout le site
+   ------------------------------------------------------------ */
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-slate-300) var(--color-slate-100);
+    }
+
+    body {
+        font-family: var(--font-questrial), ui-sans-serif, system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        background-color: #ffffff;
+        color: var(--color-slate-600);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    *,
+    ::before,
+    ::after {
+        border-color: var(--color-slate-200);
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: var(--font-playfair), ui-serif, Georgia, serif;
+        color: var(--color-ink);
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        text-wrap: balance;
+    }
+
+    h1 {
+        font-size: clamp(36px, 5vw, 56px);
+    }
+
+    h2 {
+        font-size: clamp(28px, 3.5vw, 40px);
+    }
+
+    h3 {
+        font-size: clamp(22px, 2.5vw, 28px);
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+
+    strong {
+        color: var(--color-ink);
+        font-weight: 600;
+    }
+
+    ::selection {
+        background-color: var(--color-primary);
+        color: #ffffff;
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-ink);
+        outline-offset: 2px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--color-slate-100);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-slate-300);
+        border: 2px solid var(--color-slate-100);
+        border-radius: 999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--color-primary);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        ::before,
+        ::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+}
+
+/* Arrêt du marquee si l’utilisateur préfère réduire les animations */
+@media (prefers-reduced-motion: reduce) {
+    .animate-marquee-left,
+    .animate-marquee-right,
+    .animate-marquee-up,
+    .animate-marquee-down {
+        animation: none !important;
+    }
 }

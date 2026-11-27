@@ -1,25 +1,40 @@
-import { getTranslations } from 'next-intl/server';
-// Indique à Next.js 16 que cette route peut bloquer le pré-rendu 
-// car elle dépend des paramètres dynamiques (locale)
+import { getTranslations } from "next-intl/server";
+import HeroCarousel from "@/components/sections/HeroCarousel";
+import Marquee from "@/components/sections/Marquee";
+import AboutIntro from "@/components/sections/AboutIntro";
+import MissionVision from "@/components/sections/MissionVision";
+import Stats from "@/components/sections/Stats";
+import Achievements from "@/components/sections/Achievements";
+import Gallery from "@/components/sections/Gallery";
+import DonationCta from "@/components/sections/DonationCta";
+import BlogPreview from "@/components/sections/BlogPreview";
+import { getLatestPosts } from "@/data/posts";
+import Testimonials from "@/components/sections/Testimonials";
+import Partners from "@/components/sections/Partners";
+
 export const instant = false;
 
 export default async function Home({
-    params
+    params,
 }: {
     params: Promise<{ locale: string }>;
 }) {
-    // On récupère la locale de manière asynchrone
     const { locale } = await params;
-  
-    // On charge les traductions côté serveur (optimisé)
-    const t = await getTranslations({ locale, namespace: 'Home' });
-  
+    const t = await getTranslations({ locale, namespace: "Home" });
+
     return (
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-                <h1 className="text-4xl font-bold">{t('title')}</h1>
-                <p className="text-lg">{t('description')}</p>
-            </main>
-        </div>
+        <>
+            <HeroCarousel locale={locale} />
+            <Marquee />
+            <AboutIntro locale={locale} />
+            <MissionVision />
+            <Stats />
+            <Achievements />
+            <Gallery />
+            <DonationCta locale={locale} />
+            <BlogPreview locale={locale} posts={getLatestPosts(3)} />
+            <Testimonials />
+            <Partners locale={locale} />
+        </>
     );
 }
